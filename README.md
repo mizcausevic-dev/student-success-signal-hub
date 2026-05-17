@@ -40,7 +40,7 @@ cohort-level support planning.
 ## Local Run
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\student-success-signal-hub"
+cd student-success-signal-hub
 py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m app.main
@@ -63,7 +63,7 @@ $env:PORT = "4697"
 ## Validation
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\student-success-signal-hub"
+cd student-success-signal-hub
 .\.venv\Scripts\python.exe -m unittest discover -s tests
 .\.venv\Scripts\python.exe scripts\run_demo.py
 .\.venv\Scripts\python.exe scripts\smoke_check.py
